@@ -31,6 +31,10 @@ class EscapeAction(Action):
 	def perform(self) -> None:
 		raise SystemExit()
 
+class WaitAction(Action):
+	def perform(self) -> None:
+		pass
+
 class ActionWithDirection(Action):
 	def __init__(self, entity: Entity, dx: int, dy: int):
 		super().__init__(entity)
@@ -77,4 +81,4 @@ class BumpAction(ActionWithDirection):
 		if self.blocking_entity:
 			return MeleeAction(self.entity, self.dx, self.dy).perform()
 		else:
-			return MovementAction(self.entity, self.dx, self.dy).perform(engine, entity)
+			return MovementAction(self.entity, self.dx, self.dy).perform()
