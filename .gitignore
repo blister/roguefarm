@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# don't check in save files
+*.sav
+
 # stupid vim swap files
 *.swp
 

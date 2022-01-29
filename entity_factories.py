@@ -41,14 +41,14 @@ health_potion = Item(
 
 lightning_scroll = Item(
 	char="?",
-	color=(255,127,0),
+	color=(255,255,200),
 	name="Scroll of Lightning",
 	consumable=consumable.LightningDamageConsumable(damage = 20, max_range=5),
 )
 
 confusion_scroll = Item(
 	char="?",
-	color=(207,63,255),
+	color=(255,200,255),
 	name="Scroll of Confusion",
 	consumable=consumable.ConfusionConsumable(num_turns=10),
 )
